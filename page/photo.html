@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Projet avatar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="Description" content="Site internet dédié au film AVATAR dans le cadre de l'UE MM01 pour l'UTT, site développé par KAU Anthony, REAULT Corentin en chef de projet, FROGE Kilian en ergonome et LOURY Baptiste en graphiste">
+  <meta name="keywords" lang="fr" content="Avatar, p19, mm01, projet, étudiant">
+  <meta name="author" lang="fr" content="KAU Anthony">
+  <link rel="icon" type="image/png" href="../img/favicon.png"> <!-- Insertion du favicon -->
+</head>
+<body>
+	<header>
+    <!-- Insertion du logo du site -->
+		<img src="../img/logo.png" alt="Logo du site avatar" title="Avatar">
+	</header>
+  <!-- Création du menu de navigation avec la fonction dropdown -->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+    			<div class="dropdown-content">
+     			<a href="perso.html">Acteurs et réalisateurs</a>
+      			<a href="realisation.html">Réalisation du film</a>
+      			<a href="defaut.html">Défauts de tournage</a>
+      			</div>
+			</li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Avatar</a>
+    			<div class="dropdown-content">
+     			<a href="resume.html">Résumé</a>
+      			<a href="ba.html">Bande-Annonce</a>
+      			<a href="photo.html">Photo</a>
+      			</div>
+			</li>
+			<li><a href="avatar2.html">Avatar 2</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">A propos</a>
+    			<div class="dropdown-content">
+     			<a href="contact.html">Contact</a>
+      			<a href="credit.html">Crédits</a>
+      			</div>
+			</li>
+		</ul>
+	</nav>
+  <!-- Création du menu pour le responsive, on accède directement à la page sans passer par le dropdown en survolant la rubrique principale -->
+  <div class="topnav" id="myTopnav">
+                         <a href="../index.html">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+<br>
+<div class="slideshow-container">
+<!-- Création du diaporama, réalisé à l'aide du site w3schools -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="../img/toruk.jpg" style="width:100%">
+  <div class="text">Jake et Toruk Makto</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="../img/paysage2.jpg" style="width:100%">
+  <div class="text">Paysage de Pandora</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="../img/paysage3.jpg" style="width:100%">
+  <div class="text">Photo de Jake Sully dans son avatar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="../img/paysage4.jpg" style="width:100%">
+  <div class="text">Photo de Neytiri en face du thanator</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="../img/paysage5.jpg" style="width:100%">
+  <div class="text">Photo de l'arbre où vivent les omaticayas</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- Script qui permet de dérouler le menu quand on clique sur le burger -->
+<script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+<br>
+<!-- Creation du footer avec des liens directs vers la page contact et crédits -->
+	<footer>
+    <a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a>
+    <a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram" target="blank"></a>
+    <a href="contact.html">Contact</a>
+    <p> &#169; - KAU Anthony</p>
+    <a href="credit.html">Crédits</a>
+  </footer>
+
+</body>
+</html>

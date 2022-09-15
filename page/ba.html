@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Projet avatar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="Description" content="Site internet dédié au film AVATAR dans le cadre de l'UE MM01 pour l'UTT, site développé par KAU Anthony, REAULT Corentin en chef de projet, FROGE Kilian en ergonome et LOURY Baptiste en graphiste">
+  <meta name="keywords" lang="fr" content="Avatar, p19, mm01, projet, étudiant">
+  <meta name="author" lang="fr" content="KAU Anthony">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<header>
+		<!-- Insertion du logo du site -->
+		<img src="../img/logo.png" alt="Logo du site avatar" title="Avatar">
+	</header>
+	<!-- Création du menu de navigation avec la fonction dropdown -->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+    			<div class="dropdown-content">
+     			<a href="perso.html">Acteurs et réalisateurs</a>
+      			<a href="realisation.html">Réalisation du film</a>
+      			<a href="defaut.html">Défauts de tournage</a>
+      			</div>
+			</li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Avatar</a>
+    			<div class="dropdown-content">
+     			<a href="resume.html">Résumé</a>
+      			<a href="ba.html">Bande-Annonce</a>
+      			<a href="photo.html">Photo</a>
+      			</div>
+			</li>
+			<li><a href="avatar2.html">Avatar 2</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">A propos</a>
+    			<div class="dropdown-content">
+     			<a href="contact.html">Contact</a>
+      			<a href="credit.html">Crédits</a>
+      			</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- Création du menu pour le responsive, on accède directement à la page sans passer par le dropdown en survolant la rubrique principale -->
+	<div class="topnav" id="myTopnav">
+                         <a href="../index.html">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+	<br>
+	<!-- Insertion de la bande-annonce prise directement sur Youtube -->
+	<div id="annonce">
+	<iframe width="1280" height="532" src="https://www.youtube.com/embed/O1CzgULNRGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<!-- Script qui permet de dérouler le menu quand on clique sur le burger -->
+<script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+	<!-- Creation du footer avec des liens directs vers la page contact et crédits -->
+	<footer>
+    <a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a>
+    <a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram" target="blank"></a>
+    <a href="contact.html">Contact</a>
+    <p> &#169; - KAU Anthony</p>
+    <a href="credit.html">Crédits</a>
+  </footer>
+
+</body>
+</html>

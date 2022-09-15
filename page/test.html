@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<title>Le noeud pap'</title>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<style>
+    /* Nouveau menu avec dropdown */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  width:20%;
+  text-align:center;
+  font-size: 2em;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4DBBAF;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width:20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* On cache le menu responsive  */
+.topnav
+    {
+        display: none;
+    }
+@media screen and (max-width: 768px) {
+
+    /* On cache le menu horizontal */
+    nav {
+        display: none;
+    }
+    /* On active le menu responsive */
+    .topnav {
+        display:block;
+        overflow: hidden;
+        background-color: rgba(77,187,175, 0.4);
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #2A2B5F;
+        text-align: center;
+        font-weight: bold;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+}
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+        
+    .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: rgba(77,187,175, 0.4);
+  }
+  
+    .topnav.responsive a:hover {
+    background-color:#4DBBAF;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+    <div id=conteneur>
+	<header>
+	<img src="img/logo.png"  alt="Logo noeud pap" title="Le noeud pap" />
+	</header>
+
+	<nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+                <div class="dropdown-content">
+                <a href="perso.html">Acteurs et réalisateurs</a>
+                <a href="realisation.html">Réalisation du film</a>
+                <a href="defaut.html">Défauts de tournage</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Avatar</a>
+                <div class="dropdown-content">
+                <a href="resume.html">Résumé</a>
+                <a href="ba.html">Bande-Annonce</a>
+                <a href="photo.html">Photo</a>
+                </div>
+            </li>
+            <li><a href="avatar2.html">Avatar 2</a></li>
+            <li><a href="quizz.html">Quizz</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">A propos</a>
+                <div class="dropdown-content">
+                <a href="contact.html">Contact</a>
+                <a href="credit.html">Crédits</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+	
+	  <div class="topnav" id="myTopnav">
+                         <a href=# class="active">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+                    <script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+</div>
+</body>
+</html>

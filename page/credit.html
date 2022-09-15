@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Projet avatar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Description" content="Site internet dédié au film AVATAR dans le cadre de l'UE MM01 pour l'UTT, site développé par KAU Anthony, REAULT Corentin en chef de projet, FROGE Kilian en ergonome et LOURY Baptiste en graphiste">
+	<meta name="keywords" lang="fr" content="Avatar, p19, mm01, projet, étudiant">
+	<meta name="author" lang="fr" content="KAU Anthony">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<header>
+		<!-- Insertion du logo du site -->
+		<img src="../img/logo.png" alt="Logo du site avatar" title="Avatar">
+	</header>
+	<!-- Création du menu de navigation avec la fonction dropdown -->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+    			<div class="dropdown-content">
+     			<a href="perso.html">Acteurs et réalisateurs</a>
+      			<a href="realisation.html">Réalisation du film</a>
+      			<a href="defaut.html">Défauts de tournage</a>
+      			</div>
+			</li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Avatar</a>
+    			<div class="dropdown-content">
+     			<a href="resume.html">Résumé</a>
+      			<a href="ba.html">Bande-Annonce</a>
+      			<a href="photo.html">Photo</a>
+      			</div>
+			</li>
+			<li><a href="avatar2.html">Avatar 2</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">A propos</a>
+    			<div class="dropdown-content">
+     			<a href="contact.html">Contact</a>
+      			<a href="credit.html">Crédits</a>
+      			</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- Création du menu pour le responsive, on accède directement à la page sans passer par le dropdown en survolant la rubrique principale -->
+	<div class="topnav" id="myTopnav">
+                         <a href="../index.html">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+	<!-- Création d'une case pour chacune des parties prenantes du projet -->
+	<div id="case">
+		<img src="../img/util.png" alt="Photo du chef de projet" title="Photo du chef de projet">
+		<p><strong>Nom</strong> : TOGNETTI-CADOT</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Domitille</p>
+		<br>
+		<br>
+		<p><strong>Rôle</strong> : Cliente</p>
+		<br>
+		<br>
+		<p><strong>Niveau d'études</strong> : TC4</p>
+		<br>
+		<br>
+		<p><a href="mailto:domitille.tognetti_cadot@utt.fr">Envoyer un mail</a></p>
+	</div>
+	<br>
+	<div id="case">
+		<img src="../img/util.png" alt="Photo du chef de projet" title="Photo du chef de projet">
+		<p><strong>Nom</strong> : REAULT</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Corentin</p>
+		<br>
+		<br>
+		<p><strong>Rôle</strong> : Chef de projet</p>
+		<br>
+		<br>
+		<p><strong>Niveau d'études</strong> : TC2</p>
+		<br>
+		<br>
+		<p><a href="mailto:corention.reault@utt.fr">Envoyer un mail</a></p>
+	</div>
+	<br>
+	<div id="case">
+		<img src="../img/util.png" alt="Photo de l'ergonome" title="Photo de l'ergonome">
+		<p><strong>Nom</strong> : FROGE</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Kilian</p>
+		<br>
+		<br>
+		<p><strong>Rôle</strong> : Ergonome</p>
+		<br>
+		<br>
+		<p><strong>Niveau d'études</strong> : TC2</p>
+		<br>
+		<br>
+		<p><a href="mailto:kilian.froge@utt.fr">Envoyer un mail</a></p>
+	</div>
+	<br>
+	<div id="case">
+		<img src="../img/util.png" alt="Photo du graphiste" title="Photo du graphiste">
+		<p><strong>Nom</strong> : LOURY</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Baptiste</p>
+		<br>
+		<br>
+		<p><strong>Rôle</strong> : Graphiste</p>
+		<br>
+		<br>
+		<p><strong>Niveau d'études</strong> : TC2</p>
+		<br>
+		<br>
+		<p><a href="mailto:baptite.loury@utt.fr">Envoyer un mail</a></p>
+	</div>
+	<br>
+	<div id="case">
+		<img src="../img/util.png" alt="Photo du développeur" title="Photo du développeur">
+		<p><strong>Nom</strong> : KAU</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Anthony</p>
+		<br>
+		<br>
+		<p><strong>Rôle</strong> : Développeur</p>
+		<br>
+		<br>
+		<p><strong>Niveau d'études</strong> : TC2</p>
+		<br>
+		<br>
+		<p><a href="mailto:anthony.kau@utt.fr">Envoyer un mail</a></p>
+	</div>
+	<!-- Script qui permet de dérouler le menu quand on clique sur le burger -->
+<script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+	<!-- Creation du footer avec des liens directs vers la page contact et crédits -->
+	<footer>
+    <a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a>
+    <a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram" target="blank"></a>
+    <a href="contact.html">Contact</a>
+    <p> &#169; - KAU Anthony</p>
+    <a href="credit.html">Crédits</a>
+  </footer>
+
+</body>
+</html>

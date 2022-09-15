@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Projet avatar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Description" content="Site internet dédié au film AVATAR dans le cadre de l'UE MM01 pour l'UTT, site développé par KAU Anthony, REAULT Corentin en chef de projet, FROGE Kilian en ergonome et LOURY Baptiste en graphiste">
+	<meta name="keywords" lang="fr" content="Avatar, p19, mm01, projet, étudiant">
+	<meta name="author" lang="fr" content="KAU Anthony">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<header>
+		<!-- Insertion du logo du site -->
+		<img src="../img/logo.png" alt="Logo du site avatar" title="Avatar">
+	</header>
+	<!-- Création du menu de navigation avec la fonction dropdown -->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+    			<div class="dropdown-content">
+     			<a href="perso.html">Acteurs et réalisateurs</a>
+      			<a href="realisation.html">Réalisation du film</a>
+      			<a href="defaut.html">Défauts de tournage</a>
+      			</div>
+			</li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Avatar</a>
+    			<div class="dropdown-content">
+     			<a href="resume.html">Résumé</a>
+      			<a href="ba.html">Bande-Annonce</a>
+      			<a href="photo.html">Photo</a>
+      			</div>
+			</li>
+			<li><a href="avatar2.html">Avatar 2</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">A propos</a>
+    			<div class="dropdown-content">
+     			<a href="contact.html" class="last">Contact</a>
+      			<a href="credit.html"class="last">Crédits</a>
+      			</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- Création du menu pour le responsive, on accède directement à la page sans passer par le dropdown en survolant la rubrique principale -->
+	<div class="topnav" id="myTopnav">
+                         <a href="../index.html">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+	<br>
+	<!-- Création d'un bloc qui contiendra les informations des acteurs ou réalisateurs-->
+	<div id="conteneur4">
+		<img src="../img/cameron.jpg" alt="Photo de James Cameron" title="Photo de James Cameron">
+		<p><strong>Nom</strong> : CAMERON</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : James</p>
+		<br>
+		<br>
+		<p><strong>Métier</strong> : Réalisateur, scénariste, producteur</p>
+		<br>
+		<br>
+		<p><strong>Date de naissance</strong> : 16 août 1654</p>
+		<br>
+		<br>
+		<p><strong>Nationalité</strong> : Canadienne</p>
+		<div id="carriere">
+			<p>
+				Il a réalisé et écrit les films, Terminator (1984), Aliens, le retour (1986), Abyss (1989), Terminator 2 : Le Jugement dernier (1991), True Lies (1994), Titanic (1997) et Avatar (2009) ainsi que Alita : Battle Angel (2019).
+			</p>
+			<p>	
+				En 1997, il bat un record avec Titanic, film consacré au naufrage de 1912. Le film est resté pendant onze ans le plus gros succès du box-office mondial et reçoit en 1998 l'Oscar du meilleur film et Cameron remporte la même année l'Oscar du meilleur réalisateur. Le film remporte également neuf autres Oscars. Le budget du film est de quelque 200 millions de dollars.
+			</p>
+			<p>	
+				Il bat son propre record en 2009, avec Avatar, film de science-fiction, dont le budget est estimé à près de 400 millions de dollars. Le film bat également Titanic, en tant que plus grand succès du box-office mondial en 2010, et dégage en tout 2,78 milliards de dollars de recettes. Cameron, en tant que producteur et réalisateur de ce film, empoche environ 260 millions de dollars. Devant ce succès phénoménal, Cameron annonce rapidement qu’une trilogie est déjà prévue.
+			</p>
+			<p>	
+				Il possède sa propre société de production : Lightstorm Entertainment.
+			</p>
+			<p>	
+				Une étoile porte son nom sur l'Allée des célébrités canadiennes depuis 2008 ainsi que sur le Walk of Fame (Hollywood) depuis 2009.
+			</p>
+		</div>
+	</div>
+	<br>
+	<div id="conteneur4">
+		<img src="../img/sam.jpg" alt="Photo de Sam Worthington" title="Photo de Sam Worthington">
+		<p><strong>Nom</strong> : WORTHINGTON</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Samuel</p>
+		<br>
+		<br>
+		<p><strong>Métier</strong> : Acteur, réalisateur, scénariste</p>
+		<br>
+		<br>
+		<p><strong>Personnage</strong> : Jake Sully</p>
+		<br>
+		<br>
+		<p><strong>Date de naissance</strong> : 2 août 1976</p>
+		<br>
+		<br>
+		<p><strong>Nationalité</strong> : Australienne</p>
+		<div id="carriere">
+			<p>
+				Samuel Henry John « Sam » Worthington naît à Godalming dans le comté de Surrey par l'union de Ronald W. Worthington, un employé et Jeanne J. Worthington (née Martyn), femme au foyer. Il a une sœur aînée, Lucinda. Très vite, alors qu'il est âgé de six mois, ses parents emménagent en Australie dans la banlieue de Perth Warnbro, commune de Rockingham.
+			</p>
+			<p>
+				Il effectue ses études au John Curtin College of The Arts mais quitte l'école à dix-sept ans. À dix-neuf ans, il accompagne sa petite amie de l'époque pour son examen d'entrée dans le prestigieux National Institute of Dramatic Art (NIDA) de Sydney qui a accueilli entre autres Mel Gibson, Cate Blanchett et Baz Luhrmann : elle se voit refuser l'admission, mais lui est admis à sa grande surprise. Il sort diplômé du NIDA, en 1998, à l’âge de vingt-deux ans et est acclamé pour sa prestation d’Arthur Wellesley dans la pièce Judas Kiss montée au Belvoir Street Theatre.
+			</p>
+			<p>
+				Il est aussi un grand fan de rock et de heavy metal, arborant souvent lors d'interview, différents t-shirts de groupes tels que Motörhead, Metallica, AC/DC, Guns N' Roses, etc.
+			</p>
+		</div>
+	</div>
+	<br>
+	<div id="conteneur4">
+		<img src="../img/zoe.jpg" alt="Photo de Zoe Saldana" title="Photo de Zoe Saldana">
+		<p><strong>Nom</strong> : SALDANA</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Zoé</p>
+		<br>
+		<br>
+		<p><strong>Métier</strong> : Actrice, réalisatrice, productrice</p>
+		<br>
+		<br>
+		<p><strong>Personnage</strong> : Neytiri</p>
+		<br>
+		<br>
+		<p><strong>Date de naissance</strong> : 19 juin 1978</p>
+		<br>
+		<br>
+		<p><strong>Nationalité</strong> : Américaine, Dominicaine</p>
+		<div id="carriere">
+			<p>
+				Née de parents originaires de République dominicaine et de Porto Rico, elle grandit dans le Queens à New York. Quand elle a 9 ans, son père décède dans un accident de voiture. Elle repart alors avec sa mère et sa sœur en République dominicaine. Là, elle s'inscrit dans une école de danse où elle s'initie à un certain nombre de styles et notamment le ballet.
+			</p>
+			<p>
+				À 17 ans, elle revient aux États-Unis avec sa famille, où elle s'adonne alors au théâtre avec la troupe Faces ainsi que le New York Youth Theatre.
+			</p>
+			<p>
+				Elle fait ses débuts dans un cinéma à destination de la jeunesse : en 2000, un premier rôle dans le film indépendant Center Stage, de Nicholas Hytner, qui lui permet d'exploiter ses talents de danseuse, puis l'année suivante fait partie de la distribution de la comédie potache Get Over It, menée par une jeune Kirsten Dunst. En 2002, elle joue la meilleure amie de Britney Spears dans son premier essai au cinéma, Crossroads, et incarne la petite amie du héros de Beat Battle, interprété par Nick Cannon.
+			</p>
+		</div>
+	</div>
+	<br>
+	<div id="conteneur4">
+		<img src="../img/lang.jpg" alt="Photo de Stephen Lang" title="Photo de Stephen Lang">
+		<p><strong>Nom</strong> : LANG</p>
+		<br>
+		<br>
+		<p><strong>Prénom</strong> : Stephen</p>
+		<br>
+		<br>
+		<p><strong>Métier</strong> : Acteur</p>
+		<br>
+		<br>
+		<p><strong>Personnage</strong> : Colonel Miles Quaritch</p>
+		<br>
+		<br>
+		<p><strong>Date de naissance</strong> : 11 juillet 1952</p>
+		<br>
+		<br>
+		<p><strong>Nationalité</strong> : Américaine</p>
+		<div id="carriere">
+			<p>
+				Stephen Lang est né à New York. Il est le fils de Thérèse (née Volmer) et d'Eugene Lang, un homme d'affaires-philanthrope. Il est catholique et son père est issu d'une famille juive-hongroise. Il est marié à Kristina Watson, créatrice de costumes et enseignante, depuis le 1er juin 1980. Ils ont cinq enfants : Lucy, Jane, Noah, Grace, et Daniel. Stephen Lang a fréquenté l'école PS 178 à Jamaïque Estates. Il est diplômé de Swarthmore College en 1973, en littérature anglaise. Le 30 mai 2010, Swarthmore lui a décerné un diplôme honorifique en reconnaissance de sa brillante carrière au théâtre, à la télévision et au cinéma.
+			</p>
+		</div>
+	</div>
+	<!-- Script qui permet de dérouler le menu quand on clique sur le burger -->
+<script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+	<br>
+	<!-- Creation du footer avec des liens directs vers la page contact et crédits -->
+	<footer>
+    <a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a>
+    <a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram" target="blank"></a>
+    <a href="contact.html">Contact</a>
+    <p> &#169; - KAU Anthony</p>
+    <a href="credit.html">Crédits</a>
+  </footer>
+</body>
+</html>

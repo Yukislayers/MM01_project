@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Projet avatar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="Description" content="Site internet dédié au film AVATAR dans le cadre de l'UE MM01 pour l'UTT, site développé par KAU Anthony, REAULT Corentin en chef de projet, FROGE Kilian en ergonome et LOURY Baptiste en graphiste">
+  <meta name="keywords" lang="fr" content="Avatar, p19, mm01, projet, étudiant">
+  <meta name="author" lang="fr" content="KAU Anthony">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<!-- Insertion du logo du site -->
+	<header>
+		<img src="../img/logo.png" alt="Logo du site avatar" title="Avatar">
+	</header>
+	<!-- Création du menu de navigation avec la fonction dropdown -->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Réalisation</a>
+    			<div class="dropdown-content">
+     			<a href="perso.html">Acteurs et réalisateurs</a>
+      			<a href="realisation.html">Réalisation du film</a>
+      			<a href="defaut.html">Défauts de tournage</a>
+      			</div>
+			</li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Avatar</a>
+    			<div class="dropdown-content">
+     			<a href="resume.html">Résumé</a>
+      			<a href="ba.html">Bande-Annonce</a>
+      			<a href="photo.html">Photo</a>
+      			</div>
+			</li>
+			<li><a href="avatar2.html">Avatar 2</a></li>
+			<li><a href="quizz.html">Quizz</a></li>
+			<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">A propos</a>
+    			<div class="dropdown-content">
+     			<a href="contact.html">Contact</a>
+      			<a href="credit.html">Crédits</a>
+      			</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- Création du menu pour le responsive, on accède directement à la page sans passer par le dropdown en survolant la rubrique principale -->
+	<div class="topnav" id="myTopnav">
+                         <a href="../index.html">Accueil</a>
+                        
+                         <a href="perso.html">Acteurs et réalisateurs</a>
+                         <a href="realisation.html">Réalisation du film</a>
+                         <a href="defaut.html">Défauts de tournage</a>
+                                                    
+                        
+                         <a href="resume.html">Résumé</a>
+                         <a href="ba.html">Bande-Annonce</a>
+                         <a href="photo.html">Photo</a>
+                               
+                        <a href="avatar2.html">Avatar 2</a>
+                        <a href="quizz.html">Quizz</a>
+                       
+                            
+                         <a href="contact.html">Contact</a>
+                        <a href="credit.html">Crédits</a>
+                            
+                         <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)">
+                                                          <div class="bar1"></div>
+                                                          <div class="bar2"></div>
+                                                          <div class="bar3"></div>
+                         </a>
+                </div>
+	<br>
+	<!-- Bloc de résumé -->
+	<div id="conteneur">
+	<h1>Résumé</h1>
+	<br>
+	<p>
+		Malgré sa paralysie, Jake Sully, un ancien marine immobilisé dans un fauteuil roulant, est resté un combattant au plus profond de son être. Il est recruté pour se rendre à des années-lumière de la Terre, sur Pandora, où de puissants groupes industriels exploitent un minerai rarissime destiné à résoudre la crise énergétique sur Terre. Parce que l'atmosphère de Pandora est toxique pour les humains, ceux-ci ont créé le Programme Avatar, qui permet à des " pilotes " humains de lier leur esprit à un avatar, un corps biologique commandé à distance, capable de survivre dans cette atmosphère létale. Ces avatars sont des hybrides créés génétiquement en croisant l'ADN humain avec celui des Na'vi, les autochtones de Pandora.
+		Sous sa forme d'avatar, Jake peut de nouveau marcher. On lui confie une mission d'infiltration auprès des Na'vi, devenus un obstacle trop conséquent à l'exploitation du précieux minerai. Mais tout va changer lorsque Neytiri, une très belle Na'vi, sauve la vie de Jake...
+	</p>
+	<br>
+	</div>
+	<div id="conteneur3">
+		<!-- Création de l'accordéon pour afficher le spoil, réalisé avec https://www.w3schools.com/howto/howto_js_accordion.asp-->
+		<button class="accordion">Attention spoil !</button>
+		<div class="panel">
+  			<p>Jake va être utilisé comme agent de renseignement, infiltré au sein des Na’vi, pour obtenir des informations sur un arbre gigantesque, l’Arbre des Âmes, en dessous duquel se trouverait un gisement d’unobabtium. Jake rejoint le programme Avatar du Dr. Grace Augustine (Sigourney Weaver). Il va piloter un corps lui permettant de passer inaperçu au sein de la tribu. Le Colonel ne porte pas les scientifiques dans son coeur. Tout ce qui compte pour lui, c’est la mission. Il rappelle à Sully qui est le patron et s’engage à lui financer son opération des jambes pour service rendu.</p>
+        <br>
+        <img src="../img/arbre.jpg" alt="arbre des âmes">
+        <br>
+        <br>
+ 			  <p>Lors de son arrivée sur Pandora, Jake est attaqué par des predateurs. Neytiri (Zoe Saldana), de la tribu des Omaticayas, lui vient en aide car Jake lui semble courageux. Il y a eu un signe. Elle veut consulter sa mère, c'est celle qui interprète la volonté de Eywa, l’esprit de la nature. Les Omaticayas accepte Jake dans le but d’en apprendre davantage sur les humains.</p>
+  			<p>En compagnie de Neytiri, Jake découvre un autre monde. Il est subjugué par la beauté de cette lune et apprend à être en harmonie avec son environnement. Il apprend à respecter la vie.</p>
+  			<p>Au point qu’il passe du côté des Na’vi en sabotant un bulldozer de la RDA. Parker Selfridge (Giovanni Ribisi), le responsable de la mission, enrage. Il décide alors de la destruction pure et simple de l’Arbre des Âmes, bien que Grace Augustine cherche à l’en dissuader. Les mercenaires attaquent les Na’vi, tuent Eytukan (Wes Studi), le père de Neytiri, et blessent Augustine. Jake parvient à regagner la confiance de son nouveau peuple en se connectant à Toruk, un dragon prédateur respecté de la tribu.</p>
+        <br>
+        <img src="../img/tor.jpg" alt="Image de toruk">
+        <br>
+        <br>
+         <p>Il unifie les différents clans pour se préparer à la bataille finale.
+    		Lors de l’assaut, les animaux sauvages de la planète viennent en aide aux Na’vi pour triompher des troupes de Quaritch et protéger l’Arbre des Âmes. Les humains sont forcés à quitter la lune, sauf ceux qui ont aidé les Na’vi. L’esprit de Jake est transféré définitivement dans le corps de son avatar.</p>
+		</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- Script qui permet de dérouler le menu quand on clique sur le burger -->
+<script>
+function deroul() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    function Bar(x) {
+    x.classList.toggle("change");
+}
+</script>
+</body>
+	</div>
+	<br>
+	<!-- Creation du footer avec des liens directs vers la page contact et crédits -->
+	<footer>
+    <a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a>
+    <a href="https://twitter.com/" class="fab fa-twitter" target="blank"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram" target="blank"></a>
+    <a href="contact.html">Contact</a>
+    <p> &#169; - KAU Anthony</p>
+    <a href="credit.html">Crédits</a>
+  </footer>
+
+</body>
+</html>
